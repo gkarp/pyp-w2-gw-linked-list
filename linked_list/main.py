@@ -55,7 +55,8 @@ class Node(object):
     def __eq__(self, other):
         if type(self) == type(other):
             return self == other
-        return False
+        else:
+            return self.elem == other
 
     def __repr__(self):
         return "%s" % (self.elem)
